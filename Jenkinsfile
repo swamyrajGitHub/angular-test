@@ -12,23 +12,23 @@ node {
 
     stage('NPM Install') {
         withEnv(["NPM_CONFIG_LOGLEVEL=warn"]) {
-            sh 'npm install'
+            bat 'npm install'
         }
     }
 
     stage('Test') {
        
-          sh 'ng test --progress=false --watch false'
+          bat 'ng test --progress=false --watch false'
         
     }
 
     stage('Lint') {
-        sh 'ng lint'
+        bat 'ng lint'
     }
 
     stage('Build') {
         milestone()
-        sh 'ng build --prod --aot --sm --progress=false'
+        bat 'ng build --prod --aot --sm --progress=false'
     }
 
     
