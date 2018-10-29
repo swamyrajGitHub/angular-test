@@ -28,7 +28,7 @@ node {
 
     stage('Build') {
         milestone()
-        bat 'ng build --prod --aot --sm --progress=false'
+        bat 'ng build --prod'
     }
 
     
