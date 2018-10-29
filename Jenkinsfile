@@ -13,15 +13,15 @@ node {
         //currentBuild.displayName = "#${currentBuild.number}-${env.git_commit_id_short}"
    // }
 
-   /** stage('NPM Install') {
+    /**stage('NPM Install') {
         withEnv(["NPM_CONFIG_LOGLEVEL=warn"]) {
             bat 'npm install'
         }
-    }
-**/
+    }**/
+
     stage('Test') {
        
-          bat 'ng test'
+          bat 'ng test --progress=true --watch false'
         
     }
 
