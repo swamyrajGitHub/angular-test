@@ -35,17 +35,5 @@ describe('UserComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => { 
-    expect(component).toBeTruthy();
-  });
-
-  it('should have one user', () => { 
-    expect(component.users.length).toEqual(1);
-  });
-
-
-  it('html should render one user', () => { 
-    const ele = fixture.nativeElement.queryselector('p');
-    expect(ele.innerText).toContain('user1');
-  });
+  
 });
