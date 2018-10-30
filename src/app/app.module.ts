@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { UserComponent } from './user/user.component';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { HttpClient } from '@angular/common/http';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClient,
+    HttpClientModule,
     ReactiveFormsModule
   ],
   providers: [],
