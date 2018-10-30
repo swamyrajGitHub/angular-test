@@ -25,9 +25,9 @@ node {
         
     }
 
-    stage('Lint') {
+    /**stage('Lint') {
         bat 'ng lint'
-    }
+    }**/
 
     stage('Build') {
         milestone()
