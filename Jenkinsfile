@@ -2,10 +2,10 @@ node {
 
 
     //check out happens from jenkins default
-    //stage('Checkout') {
+    stage('Checkout') {
         //disable to recycle workspace data to save time/bandwidth
         //deleteDir()
-        //checkout scm
+        checkout scm
 
         //enable for commit id in build number
         //env.git_commit_id = sh returnStdout: true, script: 'git rev-parse HEAD'
